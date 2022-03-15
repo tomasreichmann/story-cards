@@ -1,0 +1,33 @@
+.base {
+  --Button-vertical-padding-default: 1mm;
+  --Button-horizontal-padding-default: 4mm;
+  background-color: var(--Button-background-color, var(--color-info));
+  color: var(--Button-color, var(--color-text-inverse));
+  border-radius: var(--Button-border-radius, var(--border-radius));
+  border: 0;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+  padding: var(
+      --Button-vertical-padding,
+      var(--Button-vertical-padding-default)
+    )
+    var(--Button-horizontal-padding, var(--Button-horizontal-padding-default));
+  background-image: linear-gradient(var(#888), var(#888));
+  transition: all 0.4s;
+  background-blend-mode: overlay;
+  cursor: pointer;
+}
+
+.base:hover {
+  background-image: linear-gradient(
+    var(--Button-background-color),
+    var(--Button-background-color)
+  );
+}
+
+.base:disabled {
+  cursor: auto;
+  pointer-events: none;
+  background-image: linear-gradient(var(#100), var(#100));
+  background-blend-mode: saturation;
+}

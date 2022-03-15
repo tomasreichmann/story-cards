@@ -1,0 +1,57 @@
+.blockquote {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.article {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.h1 {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.h2 {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.h3 {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.h4 {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.h5 {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.h6 {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.li {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.p {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.span {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.ul {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+  padding-left: var(--card-padding-horizontal);
+}
+.ol {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}
+.pre {
+  font-size: var(--card-font-size);
+  margin: 0 0 var(--card-item-margin) 0;
+}

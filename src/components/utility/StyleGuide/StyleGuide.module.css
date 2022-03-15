@@ -1,0 +1,23 @@
+.base {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.variable {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}

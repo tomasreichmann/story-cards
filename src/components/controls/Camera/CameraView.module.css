@@ -1,0 +1,17 @@
+.base {
+  position: relative;
+  overflow: hidden;
+  perspective-origin: 50vw 50vh;
+  perspective: var(--perspective);
+}
+
+.base * {
+  perspective: var(--perspective);
+}
+
+.content {
+  position: absolute;
+  /*transition: transform 50ms;*/
+  transform-origin: 0 0;
+  transform-style: preserve-3d;
+}

@@ -1,0 +1,18 @@
+.base {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.moreCards {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.moreCards .card {
+  position: relative;
+  height: 1mm;
+  margin-bottom: -2mm;
+  transition: translateY(-100%);
+}

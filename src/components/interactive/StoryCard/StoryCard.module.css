@@ -1,0 +1,124 @@
+.base {
+  --card-font-size: 3mm;
+  --card-padding-vertical: 2mm;
+  --card-padding-horizontal: 3mm;
+  --card-item-margin: 0.25mm;
+  --card-border-padding: 1.5mm;
+}
+
+.content {
+  flex: 1 0 auto;
+  border: 0.5mm solid rgba(0, 0, 0, 0.5);
+  border-radius: 5mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  user-select: none;
+}
+
+.title {
+  font-size: 4mm;
+  padding: var(--card-padding-vertical) var(--card-padding-horizontal);
+  margin: 0;
+  border-radius: 5mm 5mm 0 0;
+  background-color: var(--paper-accent);
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  height: 30mm;
+  flex: 0 1 auto;
+}
+
+.image {
+  object-fit: cover;
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
+.description {
+  padding: var(--card-padding-vertical) var(--card-padding-horizontal);
+}
+
+.controls {
+  position: absolute;
+  bottom: 100%;
+  right: 5mm;
+  left: 5mm;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2mm;
+}
+.focus {
+  --Button-background-color: var(--color-paper-info);
+  --Button-color: var(--color-text);
+}
+.flip {
+  --Button-background-color: var(--color-paper-good);
+  --Button-color: var(--color-text);
+}
+
+.base:hover .controls {
+  opacity: 1;
+  visibility: visible;
+}
+
+.base__criticalFail {
+  --paper-accent: var(--color-paper-worst);
+}
+
+.base__fail {
+  --paper-accent: var(--color-paper-bad);
+}
+
+.base__successWithAComplication {
+  --paper-accent: var(--color-paper-neutral);
+}
+
+.base__success {
+  --paper-accent: var(--color-paper-good);
+}
+
+.base__criticalSuccess {
+  --paper-accent: var(--color-paper-best);
+}
+
+.base__complication {
+  --paper-accent: var(--color-paper-bad);
+}
+
+.base__work {
+  --paper-accent: var(--color-paper-neutral);
+}
+
+.base__crisis {
+  --paper-accent: var(--color-paper-worst);
+}
+
+.base__resource {
+  --paper-accent: var(--color-paper-valuable);
+}
+
+.base__loomingThreat {
+  --paper-accent: var(--color-paper-bad);
+}
+
+.base__immediateDanger {
+  --paper-accent: var(--color-paper-worst);
+}
+
+.base__startingAssets {
+  --paper-accent: var(--color-paper-valuable);
+}
+
+.base__introduction,
+.base__callToAdventure {
+  --paper-accent: var(--color-paper-info);
+}

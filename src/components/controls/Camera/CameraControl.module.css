@@ -1,0 +1,82 @@
+.base {
+  position: relative;
+}
+
+.base__dragging * {
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
+.debug {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+.controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  --Button-border-radius: 0;
+  --Button-background-color: var(--color-neutral-light);
+  --Button-color: var(--color-text);
+}
+
+.controls_scale {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.controls_test {
+  --Button-border-radius: var(--border-radius) 0 0 0;
+}
+.controls_test2 {
+}
+.controls_scalePercentageIncrease {
+  --Button-background-color: var(--color-good-light);
+}
+.controls_scalePercentageDecrease {
+  --Button-background-color: var(--color-bad-light);
+}
+.controls_oneToOne {
+}
+.controls_zoomOut {
+}
+
+.controls_panUp {
+  grid-column: 4;
+  grid-row: 1;
+  --Button-border-radius: var(--border-radius) 0 0 0;
+}
+.controls_panRight {
+  grid-column: 3;
+  grid-row: 2;
+}
+.controls_panDown {
+  grid-column: 4;
+  grid-row: 2;
+}
+.controls_panLeft {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.view {
+  height: 100%;
+  width: 100%;
+}
+
+.viewContent {
+  transition: transform 0.2s;
+}
+
+.base__dragging .viewContent {
+  transition: transform 0.1s;
+}

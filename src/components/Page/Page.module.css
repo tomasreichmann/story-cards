@@ -1,0 +1,40 @@
+.base {
+  --color-mod: 0.6;
+  --color-info: hsl(200, 50%, calc(90% * var(--color-mod)));
+  --color-best: hsl(100, 75%, calc(70% * var(--color-mod)));
+  --color-good: hsl(100, 50%, calc(85% * var(--color-mod)));
+  --color-neutral: hsl(45, 100%, calc(90% * var(--color-mod)));
+  --color-bad: hsl(0, 75%, calc(90% * var(--color-mod)));
+  --color-worst: hsl(0, 100%, calc(80% * var(--color-mod)));
+  --color-valuable: hsl(160, 100%, calc(90% * var(--color-mod)));
+
+  --color-dark-mod: 0.4;
+  --color-info-dark: hsl(200, 50%, calc(90% * var(--color-dark-mod)));
+  --color-best-dark: hsl(100, 75%, calc(70% * var(--color-dark-mod)));
+  --color-good-dark: hsl(100, 50%, calc(85% * var(--color-dark-mod)));
+  --color-neutral-dark: hsl(45, 100%, calc(90% * var(--color-dark-mod)));
+  --color-bad-dark: hsl(0, 75%, calc(90% * var(--color-dark-mod)));
+  --color-worst-dark: hsl(0, 100%, calc(80% * var(--color-dark-mod)));
+  --color-valuable-dark: hsl(160, 100%, calc(90% * var(--color-dark-mod)));
+
+  --color-light-mod: 0.8;
+  --color-info-light: hsl(200, 50%, calc(90% * var(--color-light-mod)));
+  --color-best-light: hsl(100, 75%, calc(70% * var(--color-light-mod)));
+  --color-good-light: hsl(100, 50%, calc(85% * var(--color-light-mod)));
+  --color-neutral-light: hsl(45, 100%, calc(90% * var(--color-light-mod)));
+  --color-bad-light: hsl(0, 75%, calc(90% * var(--color-light-mod)));
+  --color-worst-light: hsl(0, 100%, calc(80% * var(--color-light-mod)));
+  --color-valuable-light: hsl(160, 100%, calc(90% * var(--color-light-mod)));
+
+  --color-paper-info: hsl(200, 50%, 90%);
+  --color-paper-best: hsl(100, 50%, 70%);
+  --color-paper-good: hsl(100, 50%, 85%);
+  --color-paper-neutral: hsl(45, 100%, 90%);
+  --color-paper-bad: hsl(0, 100%, 90%);
+  --color-paper-worst: hsl(0, 100%, 80%);
+  --color-paper-valuable: hsl(160, 100%, 90%);
+
+  --color-text: rgba(0, 0, 0, 0.75);
+  --color-text-inverse: rgba(255, 255, 255, 0.9);
+  --border-radius: 1mm;
+}
